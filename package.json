@@ -1,0 +1,22 @@
+{
+  "name": "mpa-spa",
+  "version": "1.0.0",
+  "description": "Простейшая реализация SPA и MPA архитектур.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Melodyn/mpa-spa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Melodyn/mpa-spa/issues"
+  },
+  "homepage": "https://github.com/Melodyn/mpa-spa#readme",
+  "devDependencies": {
+    "@types/node": "^16.9.6"
+  }
+}

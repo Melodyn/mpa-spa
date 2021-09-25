@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SPA+SSR-приложение</title>
+</head>
+<body>
+    <h1>Обо мне</h1>
+    <ul>
+        <li>
+            <form action="/spa" method="post">
+                <input type="hidden" value="main" name="page">
+                <input type="submit" value="Главная">
+            </form>
+        </li>
+        <li><p>Обо мне</p></li>
+        <li>
+            <form action="/spa" method="post">
+                <input type="hidden" value="contacts" name="page">
+                <input type="submit" value="Контакты">
+            </form>
+        </li>
+    </ul>
+</body>
+</html>
