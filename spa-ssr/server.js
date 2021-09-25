@@ -25,19 +25,23 @@ const params = {
 
 http
   .createServer((req, res) => {
+    // CORS
     const headers = {
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Methods': 'OPTIONS, POST, GET',
       'Access-Control-Max-Age': 2592000,
     };
-
-    // CORS
     if (req.method === 'OPTIONS') {
       res.writeHead(204, headers);
       res.end();
       return;
     }
 
+    if (req.url === '/favicon.ico') {
+      res.writeHead(204, headers);
+      res.end();
+      return;
+    }
     if (req.url !== '/spa') {
       res.writeHead(302, {
         ...headers,
